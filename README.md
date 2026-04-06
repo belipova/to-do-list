@@ -1,0 +1,2 @@
+# to-do list
+This project is built on pure JavaScript — no frameworks were used. Only HTML, CSS, and JS. The structure was thought out step by step, the interface was stylized, and the implementation of all JS logic was implemented: adding, deleting, searching for tasks, working with the DOM, and animation. The architecture was built, the state was saved, rendering was organized, and events were handled.
