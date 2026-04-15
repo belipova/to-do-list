@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+  <title>To Do List</title>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <div class="todo" id="todo">
+    <h1 class="todo_title">To-Do List</h1>
+    <form class="todo_form" id="newTaskForm">
+      <div class="todo_field field">
+        <label class="field_label" for="newTaskInput">New task</label>
+        <input class="field_input" id="newTaskInput"
+          placeholder="Enter..."
+          autocomplete="on"
+        />
+      </div>
+      <button class="button" type="submit">Add</button>
+    </form>
+    <form class="todo_form" id="searchTaskForm">
+      <div class="todo_field field">
+        <label class="field_label" for="searchInput">Search task</label>
+        <input class="field_input" id="searchInput"
+          placeholder="Enter..."
+          autocomplete="off"
+          type="search"
+        />
+      </div>
+    </form>
+    <div class="todo_info">
+      <div class="todo_total-tasks">
+        Total tasks: <span id="totalTasks">0</span>
+      </div>
+      <button class="todo_delete-all-btn" type="button" id="deleteAllBtn">
+        Delete all
+      </button>
+    </div>
+    <ul class="todo_list" id="taskList"></ul>
+    <div class="todo_empty-message" id="emptyMessage"></div>
+  </div>
+</body>
+</html>
